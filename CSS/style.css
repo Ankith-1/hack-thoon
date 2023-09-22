@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    margin : 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#000;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.link a{
+    text-decoration: none;
+    padding: 2px;
+}
+
+.active{
+    font-weight: 700;
+}

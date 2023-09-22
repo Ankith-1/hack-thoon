@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    margin : 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#101224;
+}
+
+
+.india-map{
+    width: 100vh;
+    height: 90vh;
+    margin : 0 auto;
+    position: relative;
+}
+
+.india-map img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pin{
+    background: lightblue;
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+}
+
+.pin::before{
+    content: '';
+    background: lightblue;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: pulse 1.3s ease-in-out infinite;
+}
+
+.pin span{
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.heading{
+    text-align: center;
+}
+
+.guj{
+    top: 48%;
+    left: 19%;
+}
+
+@keyframes pulse{
+    100%{
+        opacity: 0;
+        transform: 
+        translate(-50%,-50%)
+        scale(2.5);
+    }
+}
