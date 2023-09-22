@@ -1,6 +1,14 @@
+:root{
+    --textWhite:#fff;
+    --pinHoverClr:red;
+    --pinColor:lightblue;
+}
 *{
     box-sizing: border-box;
-    color: #fff;
+    
+}
+a{
+    text-decoration: none;
 }
 
 body{
@@ -25,7 +33,7 @@ body{
 }
 
 .pin{
-    background: lightblue;
+    background: var(--pinColor);
     position: absolute;
     width: 0.7em;
     height: 0.7em;
@@ -34,7 +42,7 @@ body{
 
 .pin::before{
     content: '';
-    background: lightblue;
+    background: var(--pinColor);
     position: absolute;
     top : 50%;
     left : 50%;
@@ -45,6 +53,14 @@ body{
     animation: pulse 1.3s ease-in-out infinite;
 }
 
+@keyframes pulse{
+    100%{
+        opacity: 0;
+        transform: 
+        translate(-50%,-50%)
+        scale(2.5);
+    }
+}
 .pin span{
     display: inline-block;
     white-space: nowrap;
@@ -58,6 +74,12 @@ body{
     font-size: 0.9em;
     color: #000;
 }
+.pin span a{
+    color: #000;
+}
+.pin span a:hover{
+    color: var(--pinHoverClr);
+}
 
 .heading{
     text-align: center;
@@ -67,12 +89,125 @@ body{
     top: 48%;
     left: 19%;
 }
-
-@keyframes pulse{
-    100%{
-        opacity: 0;
-        transform: 
-        translate(-50%,-50%)
-        scale(2.5);
-    }
+.Rajasthan{
+    top: 35%;
+    left: 24%;
+}
+.Punjab{
+    top: 22%;
+    left: 29%;
+}
+.Haryana{
+    top: 27.5%;
+    left: 31.5%;
+}
+.Himachal-pradesh{
+    top: 18%;
+    left: 34%;
+}
+.JammuKashmir{
+    top: 13%;
+    left: 28%;
+}
+.Ladakh{
+    top: 7%;
+    left: 31.5%;
+}
+.UttarPradesh{
+    top: 35%;
+    left: 44%;
+}
+.MadhyaPradesh{
+    top: 47%;
+    left: 36%;
+}
+.bihar{
+    top: 39%;
+    left: 57%;
+}
+.TamilNadu{
+    top: 85%;
+    left: 38%;
+}
+.Kerala{
+    top: 88%;
+    left: 32.5%;
+}
+.Karnataka{
+    top: 75%;
+    left: 30%;
+}
+.Maharashtra{
+    top: 60%;
+    left: 25%;
+}
+.Goa{
+    top: 72%;
+    left: 25.5%;
+}
+.AndhraPradesh{
+    top: 73%;
+    left: 40%;
+}
+.Telangana{
+    top: 64%;
+    left: 40%;
+}
+.Chhattisgarh{
+    top: 52%;
+    left: 48%;
+}
+.Odisha{
+    top: 55%;
+    left: 55%;
+}
+.Jharkhand{
+    top: 47%;
+    left: 55%;
+}
+.WestBengal{
+    top: 49.5%;
+    left: 63%;
+}
+.Meghalaya{
+    top: 40%;
+    left: 72%;
+}
+.Assam{
+    top: 36.5%;
+    left: 74%;
+}
+.Sikkim{
+    top: 33%;
+    left: 64.3%;
+}
+.Tripura{
+    top: 45.5%;
+    left: 73%;
+}
+.Mizoram{
+    top: 49%;
+    left: 76%;
+}
+.Maipur{
+    top: 43%;
+    left: 78.5%;
+}
+.Nagaland{
+    top: 38%;
+    left: 80%;
+}
+.ArunachalPradesh{
+    top: 30%;
+    left: 82.3%;
+}
+#ArunachalPradesh::before{
+    background: darkblue;
+}
+#ArunachalPradesh{
+    background: darkblue;
+}
+.Uttarakhand{
+    top: 24%;
+    left: 39%;
 }
