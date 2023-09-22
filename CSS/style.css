@@ -14,11 +14,11 @@ body{
 /* navbar */
 
 #navbar{
-    background: rgba(255, 255, 255, 0.1);
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 0;
 }
 
 #navbar-p1{
@@ -47,6 +47,11 @@ body{
     border-top: 5px solid rgba(255, 166, 0, 0);
 }
 
+.link:hover{
+    border-bottom: 2px solid orange;
+    transition: 0.2s ease;
+}
+
 .link a{
     text-decoration: none;
     padding: 2px;
@@ -68,12 +73,11 @@ body{
 
 #main-vid{
     position: absolute;
-    width: 70vw;
+    width: 100vw;
     opacity: .5;
     z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 0%;
+    z-index: -1;
 }
 
 #main-text{
