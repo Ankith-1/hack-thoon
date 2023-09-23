@@ -1,0 +1,101 @@
+a{
+    text-decoration: none;
+}
+
+#fcdiv-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+#fc-1{
+    width: inherit;
+}
+
+.pointer{
+    color: white;
+    position: absolute;
+    width: 117px;
+    height: 44px;
+    background: #7E47F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointer a:hover{
+    border-bottom: 1px solid white;
+    transition: 0.2s ease;
+}
+
+.pointer a{
+    color: white;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+#nayay{
+    top: 64%;
+    left: 78%
+}
+
+#shruti{
+    top: 64%;
+    left: 11%;
+}
+
+#smruti{
+    top: 64%;
+    left: 46%;
+}
+
+#para{
+    height: 51px;
+    width: 131px;
+    top: 13%;
+    left: 69.5%;
+}
+
+#apara{
+    height: 51px;
+    width: 131px;
+    top: 29%;
+    left: 69.5%;
+}
+
+@media only screen and (max-width:900px) and (min-height : 700px){
+    #navbar{
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    #fcdiv-1{
+        width: 400px;
+    }
+
+    .pointer{
+        width: 52px;
+        height: 20px;
+    }
+
+    .pointer a{
+        font-size: 0.75em;
+
+    }
+
+    #apara{
+        height: 20px;
+        width: 56px;
+        font-size: 0.5em;
+    }
+
+    #para{
+        height: 20px;
+        width: 56px;
+        font-size: 0.5em;
+
+    }
+}

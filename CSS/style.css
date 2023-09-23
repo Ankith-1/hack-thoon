@@ -7,6 +7,8 @@ body{
     padding: 0;
     font-family: sans-serif;
     background:#000;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -69,20 +71,12 @@ body{
 
 #section1{
     color: #fff;
-    height: 100vh;
-    width: 100vw;
     position: relative;
 }
 
 #main-vid{
-    position: absolute;
-    width: 135vh;
+    width: 100vw;
     opacity: 0.7;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 0
 }
 
 #main-text{
@@ -108,6 +102,8 @@ body{
     color: orange;
 }
 /* section 2 */
+
+
 .sec2-head{
     color: #fff;
     height: 5vh;
@@ -138,14 +134,62 @@ body{
     width: 100%;
   }
 
+  .swiper .swiper-button-next{
+    color: orange;
+  }
+
+  .swiper .swiper-button-prev{
+    color: orange;
+  }
+
+  .swiper .swiper-pagination-bullet-active{
+    background: orange;
+  }
+
+  .swiper .swiper-pagination-bullet{
+    background: orange;
+  }
+
   /* footer */
 
   .foot{
-    height: 5vh;
+    color: #fff;
+    height: 10vh;
     width: 100vw;
-    border: 0px 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .logo{
     height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
+
+  #foot1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  @media only screen and (max-width:670px) and (min-width:560px){
+    #navbar{
+        font-size: 0.75em;
+    }
+}
+  @media only screen and (max-width:560px){
+
+    body{
+      font-size: 0.8em;
+    }
+
+    #navbar-p1{
+      display: none;
+    }
+    #navbar-p3{
+      display: none;
+    }
+}
