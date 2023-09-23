@@ -7,6 +7,8 @@ body{
     padding: 0;
     font-family: sans-serif;
     background:#000;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -132,6 +134,22 @@ body{
     width: 100%;
   }
 
+  .swiper .swiper-button-next{
+    color: orange;
+  }
+
+  .swiper .swiper-button-prev{
+    color: orange;
+  }
+
+  .swiper .swiper-pagination-bullet-active{
+    background: orange;
+  }
+
+  .swiper .swiper-pagination-bullet{
+    background: orange;
+  }
+
   /* footer */
 
   .foot{
@@ -156,3 +174,22 @@ body{
     gap: 10px;
     padding: 5px;
   }
+
+  @media only screen and (max-width:670px) and (min-width:560px){
+    #navbar{
+        font-size: 0.75em;
+    }
+}
+  @media only screen and (max-width:560px){
+
+    body{
+      font-size: 0.8em;
+    }
+
+    #navbar-p1{
+      display: none;
+    }
+    #navbar-p3{
+      display: none;
+    }
+}

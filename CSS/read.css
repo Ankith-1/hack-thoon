@@ -11,7 +11,7 @@ a{
     position: relative;
 }
 #fc-1{
-    width: 900px;
+    width: inherit;
 }
 
 .pointer{
@@ -63,4 +63,39 @@ a{
     width: 131px;
     top: 29%;
     left: 69.5%;
+}
+
+@media only screen and (max-width:900px) and (min-height : 700px){
+    #navbar{
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    #fcdiv-1{
+        width: 400px;
+    }
+
+    .pointer{
+        width: 52px;
+        height: 20px;
+    }
+
+    .pointer a{
+        font-size: 0.75em;
+
+    }
+
+    #apara{
+        height: 20px;
+        width: 56px;
+        font-size: 0.5em;
+    }
+
+    #para{
+        height: 20px;
+        width: 56px;
+        font-size: 0.5em;
+
+    }
 }
