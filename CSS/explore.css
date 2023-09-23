@@ -1,6 +1,13 @@
+:root{
+    --pinHoverClr:red;
+    --pinColor:rgb(71, 193, 234);
+}
 *{
     box-sizing: border-box;
-    color: #fff;
+    
+}
+a{
+    text-decoration: none;
 }
 
 body{
@@ -12,8 +19,8 @@ body{
 
 
 .india-map{
-    width: 100vh;
-    height: 90vh;
+    aspect-ratio: 1/1;
+    width: 1000px;
     margin : 0 auto;
     position: relative;
 }
@@ -24,17 +31,23 @@ body{
     object-fit: contain;
 }
 
-.pin{
-    background: lightblue;
+.pin{   
+    background: var(--pinColor);
     position: absolute;
     width: 0.7em;
     height: 0.7em;
     border-radius: 50%;
 }
-
+#smallPulse{
+    background: var(--pinColor);
+    position: absolute;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+}
 .pin::before{
     content: '';
-    background: lightblue;
+    background: var(--pinColor);
     position: absolute;
     top : 50%;
     left : 50%;
@@ -45,6 +58,14 @@ body{
     animation: pulse 1.3s ease-in-out infinite;
 }
 
+@keyframes pulse{
+    100%{
+        opacity: 0;
+        transform: 
+        translate(-50%,-50%)
+        scale(2.5);
+    }
+}
 .pin span{
     display: inline-block;
     white-space: nowrap;
@@ -58,21 +79,174 @@ body{
     font-size: 0.9em;
     color: #000;
 }
+.pin span a{
+    color: #000;
+}
+.pin span a:hover{
+    color: var(--pinHoverClr);
+}
 
 .heading{
     text-align: center;
 }
 
-.guj{
-    top: 48%;
-    left: 19%;
+.reversedPin{
+    top: 50%;
+    left: 120%;
+    transform: translate(-50%,-50%);
 }
 
-@keyframes pulse{
-    100%{
-        opacity: 0;
-        transform: 
-        translate(-50%,-50%)
-        scale(2.5);
-    }
+.reversedSpan{
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+    color: #000;
+}
+
+
+.guj{
+    position: absolute;
+    top: 53%;
+    left: 7%;
+}
+.Rajasthan{
+    top: 35%;
+    left: 24%;
+}
+.Himachal-pradesh{
+    top: 18%;
+    left: 34%;
+}
+.Bihar{
+    top: 39%;
+    left: 50%;
+}
+.TamilNadu{
+    top: 85%;
+    left: 38%;
+}
+.Kerala{
+    top: 88%;
+    left: 23.5%;
+}
+.Karnataka{
+    top: 77%;
+    left: 20%;
+}
+.Goa{
+    top: 72.59%;
+    left: 18%;
+}
+.AndhraPradesh{
+    top: 73%;
+    left: 37%;
+}
+.Telangana{
+    top: 64%;
+    left: 37%;
+}
+.Chhattisgarh{
+    top: 57%;
+    left: 33%;
+}
+.Odisha{
+    top: 55%;
+    left: 55%;
+}
+.Jharkhand{
+    top: 47%;
+    left: 45%;
+}
+.WestBengal{
+    top: 49.5%;
+    left: 63%;
+}
+.Meghalaya{
+    top: 40.7%;
+    left: 64%;
+}
+.Assam{
+    top: 37.5%;
+    left: 70%;
+}
+.Sikkim{
+    top: 33%;
+    left: 65.7%;
+}
+.Tripura{
+    top: 46%;
+    left: 68.51%;
+}
+.Mizoram{
+    top: 49%;
+    left: 79%;
+}
+.Maipur{
+    top: 43%;
+    left: 78.5%;
+}
+.Nagaland{
+    top: 38%;
+    left: 84.2%;
+}
+.ArunachalPradesh{
+    top: 31%;
+    left: 83.3%;
+}
+/* #ArunachalPradesh::before{
+    background: darkblue;
+} */
+/* #ArunachalPradesh{
+    background: darkblue;
+} */
+.Uttarakhand{
+    top: 24%;
+    left: 39%;
+}
+.Rajasthan{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+.Haryana{
+    position: absolute;
+    top: 28%;
+    left: 23%;
+}
+.Punjab{
+    position: absolute;
+    top: 22%;
+    left: 22%;
+}
+.JammuKashmir{
+    position: absolute;
+    top: 13%;
+    left: 13%;
+}
+.Ladakh{
+    position: absolute;
+    top: 9%;
+    left: 26%;
+}
+.UttarPradesh{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+.MadhyaPradesh{
+    position: absolute;
+    top: 47%;
+    left: 20%;
+}
+.Maharashtra{
+    position: absolute;
+    top: 65%;
+    left: 10%;
 }
