@@ -25,7 +25,7 @@ body{
     position: relative;
 }
 
-.india-map img{
+#Country_India{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -251,11 +251,12 @@ body{
 }
 .outerSlide{
     position: absolute;
-    height: 120%;
-    width: 100vw;
+    aspect-ratio: 1/1;
+    width: 1000px;
     top: 0%;
     left: 0%;
     background-color: #00000094;
+    z-index: 1;
 }
 #slideContainer{
     position: absolute;
@@ -263,7 +264,12 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
+    display: none;
     flex-direction: row;
+    z-index: 2;
+}
+#sourceMapImage{
+    width: 1000px;
 }
 #closeBtn{
     width: 45px;
@@ -272,26 +278,31 @@ body{
 .festivalImage{
     height: 130px;
     position: absolute;
-    top: 22%;
-    left: 24%;
+    top: 28%;
+    left: 8%;
 }
 .foodImage{
     height: 130px;
     position: absolute;
     top: 62%;
-    left: 25%;
+    left: 8%;
 }
 .danceImage{
     height: 130px;
     position: absolute;
-    top: 22%;
-    left: 72%;
+    top: 28%;
+    left: 80%;
 }
 .templeImage{
     height: 130px;
     position: absolute;
     top: 62%;
-    left: 72%;
+    left: 80%;
+}
+
+.SlideImageIcons{
+    z-index: 4;
+    display: none;
 }
 .SlideImageIcons:hover{
     transform: scale(1.1);
@@ -301,3 +312,4 @@ body{
     height: 200px;
     width: 200px;
 }
+
