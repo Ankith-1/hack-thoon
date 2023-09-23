@@ -109,6 +109,7 @@ body{
 }
 /* section 2 */
 .sec2-head{
+    color: #fff;
     height: 5vh;
     width: 100vw;
     font-family: 'Courier New', Courier, monospace;
