@@ -110,7 +110,6 @@ body{
     color: #000;
 }
 
-
 .guj{
     position: absolute;
     top: 53%;
@@ -249,4 +248,56 @@ body{
     position: absolute;
     top: 65%;
     left: 10%;
+}
+.outerSlide{
+    position: absolute;
+    height: 120%;
+    width: 100vw;
+    top: 0%;
+    left: 0%;
+    background-color: #00000094;
+}
+#slideContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+}
+#closeBtn{
+    width: 45px;
+    height: 45px;
+}
+.festivalImage{
+    height: 130px;
+    position: absolute;
+    top: 22%;
+    left: 24%;
+}
+.foodImage{
+    height: 130px;
+    position: absolute;
+    top: 62%;
+    left: 25%;
+}
+.danceImage{
+    height: 130px;
+    position: absolute;
+    top: 22%;
+    left: 72%;
+}
+.templeImage{
+    height: 130px;
+    position: absolute;
+    top: 62%;
+    left: 72%;
+}
+.SlideImageIcons:hover{
+    transform: scale(1.1);
+}
+
+#templeView{
+    height: 200px;
+    width: 200px;
 }
