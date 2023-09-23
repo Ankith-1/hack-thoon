@@ -22,25 +22,25 @@
         <div>Choose a State To Explore It's Uniqueness</div>
     </div>
     <div class="india-map">
-        <img src="/images/country.svg" alt="map of india">
+        <img id="Country_India" src="/images/country.svg" alt="map of india">
         <span class="guj reversedSpan">
-            <span><a href="">Gujarat</a></span>
+            <span><a id="View" href="">Gujarat</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Rajasthan reversedSpan">
-            <span><a href="">Rajasthan</a></span>
+            <span><a id="rajasthanView" href="">Rajasthan</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Punjab reversedSpan">
-            <span><a href="">Punjab</a></span>
+            <span><a id="PunjabView" href="">Punjab</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Haryana reversedSpan">
-            <span><a href="">Haryana</a></span>
+            <span><a id="HaryanaView" href="">Haryana</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <div class="pin Himachal-pradesh">
-            <span><a href="">Himachal Pradesh</a></span>
+            <span><a id="himachalView" href="">Himachal Pradesh</a></span>
         </div>
         <span class="JammuKashmir reversedSpan">
             <span><a href="">Jammu Kashmir</a></span>
@@ -55,7 +55,7 @@
             <span class="pin reversedPin"> </span>
         </span>
         <span class="MadhyaPradesh reversedSpan">
-            <span><a href="">Madhya Pradesh</a></span>
+            <span><a id="MadhyaPradeshView" href="">Madhya Pradesh</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Bihar reversedSpan">
@@ -63,18 +63,18 @@
             <span class="pin reversedPin"> </span>
         </span>
         <div class="pin TamilNadu">
-            <span><a href="">Tamil Nadu</a></span>
+            <span><a id="tamilNaduView" href="">Tamil Nadu</a></span>
         </div>
         <span class="Kerala reversedSpan">
-            <span><a href="">Kerala</a></span>
+            <span><a id="keralaView" href="">Kerala</a></span>
             <span id="smallPulse" class="pin reversedPin"> </span>
         </span>
         <span class="Karnataka reversedSpan">
-            <span><a href="">Karnataka</a></span>
+            <span><a id="KarnatakaView" href="">Karnataka</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Maharashtra reversedSpan">
-            <span><a href="">Maharashtra</a></span>
+            <span><a id="MaharashtraView" href="">Maharashtra</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Goa reversedSpan">
@@ -82,10 +82,10 @@
             <span id="smallPulse" class="pin reversedPin"> </span>
         </span>
         <div class="pin AndhraPradesh">
-            <span><a href="">Andhra Pradesh</a></span>
+            <span><a id="AndhraPradeshView" onclick="myFunction()" href="">Andhra Pradesh</a></span>
         </div>
         <div class="pin Telangana">
-            <span><a href="">Telangana</a></span>
+            <span><a id="TelanganaView" href="">Telangana</a></span>
         </div>
         <span class="Chhattisgarh reversedSpan">
             <span><a href="">Chhattisgarh</a></span>
@@ -95,7 +95,7 @@
             <span><a href="">Odisha</a></span>
         </div>
         <span class="Jharkhand reversedSpan">
-            <span><a href="">Jharkhand</a></span>
+            <span><a id="JharkhandView" href="">Jharkhand</a></span>
             <span id="" class="pin reversedPin"> </span>
         </span>
         <div class="pin WestBengal">
@@ -129,8 +129,25 @@
             <span><a href="">ArunachalPradesh</a></span>
         </div>
         <div id="Uttarakhand" class="pin Uttarakhand">
-            <span><a href="">Uttarakhand</a></span>
+            <span><a id="UttarakhandView" href="">Uttarakhand</a></span>
+        </div>
+        <div id="slideContainer">
+            <img onclick="closeView()" id="closeBtn" src="https://img.icons8.com/?size=512&id=11997&format=png" alt="close Button">
+            <img id="sourceMapImage" src="./images/gujSlide.PNG" alt="Guj_Map">
+        </div>
+          <img class="festivalImage SlideImageIcons" src="./images/Festival CK.png" alt="Festival">
+            <img src="./images/Food CK.png" alt="food Image" class="foodImage SlideImageIcons">
+            <img class="danceImage SlideImageIcons" src="./images/Dance CK.png" alt="dance Image">
+            <img id="templeViewOn" src="./images/Temple CK.png" class="templeImage SlideImageIcons" alt="templeImage">
+        <div hidden  id="outerSlideFunc" class="outerSlide">
         </div>
     </div>
+
+    <div class="templeView">
+        <div class="Temples">
+            <img hidden id="templeView" src="./images//akshardhamtemple.jpeg" alt="">
+        </div>
+    </div>
+    <script src="./App.js"></script>
 </body>
 </html>
