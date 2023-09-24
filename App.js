@@ -18,7 +18,7 @@ JammuKashmir="JammuKashmir";
 telannga="telannga";
 bihar="bihar";
 HimachalPradesh="HimachalPradesh";
-Haryana="Haryana";
+Haryana="haryana";
 Jharkhand="Jharkhand"
 Chhattisgarh="Chhattisgarh";
 Andhrapradesh="Andhrapradesh";
@@ -334,7 +334,7 @@ document.getElementById("OdishaView").addEventListener("click", function(event){
 document.getElementById("AndhraPradeshView").addEventListener("click", function(event){
   var sourceView = document.getElementById("sourceMapImage");
   sourceView.src="./images/AP UI.png";
-  templeView='andhraPradesh';
+  templeView='Andhrapradesh';
    document.getElementById("slideContainer").style.display='block';
   document.getElementById('outerSlideFunc').style.display='block';
   document.getElementsByClassName("SlideImageIcons")[0].style.display = 'block';
@@ -556,111 +556,154 @@ document.getElementById("templeViewOn").addEventListener("click", function(event
 var fimg1,fimg2,fimg3,fimg4;
 document.getElementById("festivalViewOn").addEventListener("click", function(event){
   document.getElementById("AccessFestivalView").style.display='block';
-  if(templeView=='gujarat'){
+  if(templeView==gujarat){
     fimg1=document.getElementById("FestivalImage1");
-    fimg1.src='';
+    fimg1.src='./images/GUJARAT.png';
+  }else if(templeView==rajasthan){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/RAJASTHAN.png';
+  }else if(templeView==maharashtra){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/MAHARASHTRA.png';
+  }else if(templeView==HimachalPradesh){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/HIMACHAL.png';
+  }else if(templeView==Jharkhand){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/JHARKHAND.png';
+  }else if(templeView==Goa){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/Goa.png';
+  }else if(templeView==tamilNadu){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/TAMIL_NADU.png';
+  }else if(templeView==Andhrapradesh){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/ANDHRA_PRADESH.png';
+  }else if(templeView==Chhattisgarh){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/CHATTISGARH.png';
+  }else if(templeView==bihar){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/BIHAR.png';
+  }else if(templeView==Sikkim){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/SIKKIM.png';
+  }else if(templeView==kerala){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/KERALA.png';
+  }else if(templeView==odisha){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/ODISHA.png';
+  }else if(templeView==Meghalaya){
+    fimg1=document.getElementById("FestivalImage1");
+    fimg1.src='./images/MEGHALAYA.png';
   }
 });
+document.getElementById("closeFestivalView").addEventListener("click",function(){
+  document.getElementById("AccessFestivalView").style.display='none';
 
+})
 document.getElementById("closeTempleView").addEventListener("click", function(event){
   // var sourceView = document.getElementById("sourceMapImage");
   // sourceView.src="./images/Madhya pradesh UI.png";
   document.getElementById('AccessTempleView').style.display='none';
   event.preventDefault();
 });
-
-document.getElementById("closeFestivalView").addEventListener("click",function(){
-  document.getElementById("AccessFestivalView").style.display='none';
-  fimg1=document.getElementById("FestivalImage1");
-  fimg1.src="./images";
-});
+var festivalImage1;
+document.getElementById("festivalViewOn").addEventListener("click",function(){
+  if(templeView==gujarat){
+    festivalImage1= document.getElementById("FestivalImage1");
+    festivalImage1.src="./images/guj";
+  }
+})
 
 var fdimg1,fdimg2,fdimg3;
 
 document.getElementById("ViewFood").addEventListener("click",function(){
   document.getElementById("accessFoodItem").style.display="block";
-  if(templeView=gujarat){
+  if(templeView==gujarat){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodGuj.png";
-  }else if(templeView=rajasthan){
+  }else if(templeView==rajasthan){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodRaj.png";
-  }else if(templeView=telannga){
+  }else if(templeView==telannga){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodTel.png";
-  }else if(templeView=JammuKashmir){
+  }else if(templeView==JammuKashmir){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodJ&K.png";
   }
   else if(templeView==westBengal){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodWB.png";
-  }else if(templeView=karnataka){
+  }else if(templeView==karnataka){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodKar.png";
-  }else if(templeView=bihar){
+  }else if(templeView==bihar){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodBih.png";
   }
-  else if(templeView=uttarPradesh){
+  else if(templeView==uttarPradesh){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodUP.png";
   }
-  else if(templeView=JammuKashmir){
+  else if(templeView==JammuKashmir){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodJ&K.png";
   }
-  else if(templeView=ArunachalPradesh){
+  else if(templeView==ArunachalPradesh){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodAr{.png";
   }
-  else if(templeView=andhraPradesh){
+  else if(templeView==andhraPradesh){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodAnP.png";
-  }else if(templeView=Chhattisgarh){
+  }else if(templeView==Chhattisgarh){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodCht.png";
   }
-  else if(templeView=Goa){
+  else if(templeView==Goa){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodGoa.png";
-  }else if(templeView=HimachalPradesh){
+  }else if(templeView==HimachalPradesh){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FodddHP.png";
   }
-  else if(templeView=Nagaland){
+  else if(templeView==Nagaland){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodNaga.png";
   }
-  else if(templeView=Sikkim){
+  else if(templeView==Sikkim){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodSik.png";
   }
-  else if(templeView=Jharkhand){
+  else if(templeView==Jharkhand){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodJhar.png";
   }
-  else if(templeView=Mizoram){
+  else if(templeView==Mizoram){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodMizo.pngs";
   }
-  else if(templeView=Tripura){
+  else if(templeView==Tripura){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodTrip.png";
   }
-  else if(templeView=Meghalaya){
+  else if(templeView==Meghalaya){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodMegh.png"; 
   }
-  else if(templeView=bihar){
+  else if(templeView==bihar){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodBih.png"; 
   }
-  else if(templeView=tamilNadu){
+  else if(templeView==tamilNadu){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodTN.png"; 
   }
-  else if(templeView=punjab){
+  else if(templeView==punjab){
     fdimg1=document.getElementById("FoodImage1");
     fdimg1.src="./images/FoodPun.png"; 
   }
@@ -672,86 +715,95 @@ document.getElementById("closeFoodView").addEventListener("click",function(){
 var art1,art2,art3,art4,art5;
 document.getElementById("viewArtAndDance").addEventListener("click",function(){
   document.getElementById("accessArtItem").style.display="block";
-  if(templeView=gujarat){
+  console.log("hi")
+  if(templeView==gujarat){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_GUJARAT.PNG";
     art2 = document.getElementById("ArtImage2");
     art2.src="./images/ART_GUJARAT_3.PNG";
-  }else if(templeView=rajasthan){
+  }else if(templeView==rajasthan){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_RAJASTHAN.PNG";
     art2 = document.getElementById("ArtImage2");
     art2.src="./images/ART_RAJASTHAN 2.PNG";
-  }else if(templeView=punjab){
+  }else if(templeView==punjab){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_PUNJAB.PNG";
     art2 = document.getElementById("ArtImage2");
     art2.src="./images/ART_PUNJAB_2.PNG";
-  }else if(templeView=Haryana){
+  }else if(templeView==Haryana){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_HARYANA.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
     art2.src="./images/ART_GUJARAT_3.PNG";
-  } else if(templeView=ArunachalPradesh){
+  } else if(templeView==ArunachalPradesh){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_ARUNACHAL.PNG";
-  } else if(templeView=HimachalPradesh){
+  } else if(templeView==HimachalPradesh){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_HIMACHAL.PNG";
-  }else if(templeView=westBengal){
+  }else if(templeView==westBengal){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_WEST_BENGAL.PNG";
     art2 = document.getElementById("ArtImage2");
     art2.src="./images/ART_WEST_BENGAL_2.PNG";
-  }else if(templeView=bihar){
+  }else if(templeView==bihar){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_BIHAR.PNG";
-  } else if(templeView=uttrakhand){
+  } else if(templeView==uttrakhand){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_UTTAR_PRADESH.PNG";
     art2 = document.getElementById("ArtImage2");
     art2.src="./images/ART_UTTAR_PRADESH_2.PNG";
-  } else if(templeView=madhyaPradesh){
+  } else if(templeView==madhyaPradesh){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_MADHYA_PRADESH.PNG";
     art2 = document.getElementById("ArtImage2");
     art2.src="./images/ART_MADHYA_PRADESH_2.PNG";
-  }else if(templeView=karnataka){
+  }else if(templeView==karnataka){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_KARNATAKA.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=maharashtra){
+  }else if(templeView==maharashtra){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_MAHARASHTRA.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=Jharkhand){
+  }else if(templeView==Jharkhand){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_JHARKHAND.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=Chhattisgarh){
+  }else if(templeView==Chhattisgarh){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_CHHASTTISGARH.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=Mizoram){
+  }else if(templeView==Mizoram){
     art1 = document.getElementById("");
     art1.src="./images/ART_MIZORAM.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=Manipur){
+  }else if(templeView==Manipur){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_MANIPUR.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=Meghalaya){
+  }else if(templeView==Meghalaya){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_MEGHALAYA.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=Tripura){
+  }else if(templeView==Tripura){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/tripura UI.png";
     art2 = document.getElementById("ArtImage2").hidden=true;
-  }else if(templeView=ArunachalPradesh){
+  }else if(templeView==ArunachalPradesh){
     art1 = document.getElementById("ArtImage1");
     art1.src="./images/ART_ARUNACHAL.PNG";
     art2 = document.getElementById("ArtImage2").hidden=true;
+  }else if(templeView==kerala){
+    art1 = document.getElementById("ArtImage1");
+    art1.src="./images/ART_KERALA.PNG";
+    art2 = document.getElementById("ArtImage2").hidden=true;  
+  }else if(templeView==JammuKashmir){
+    art1 = document.getElementById("ArtImage1");
+    art1.src="./images/ART_J&K.PNG";
+    art2 = document.getElementById("ArtImage2").hidden=true;  
   }
 });
 
