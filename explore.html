@@ -6,6 +6,7 @@
     <title>Let's Explore Bharat</title>
     <link rel="stylesheet" href="/CSS/explore.css">
     <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -22,8 +23,8 @@
     <div class="heading">
         <div>Choose a State To Explore It's Uniqueness</div>
     </div>
-    <div class="india-map">
-        <img id="Country_India" src="/images/country.svg" alt="map of india">
+    <div data-aos="fade-up" class="india-map">
+        <img draggable='false' id="Country_India" src="/images/country.svg" alt="map of india">
         <span class="guj reversedSpan">
             <span><a id="View" href="">Gujarat</a></span>
             <span class="pin reversedPin"> </span>
@@ -133,25 +134,50 @@
             <span><a id="UttrakhanView" href="">Uttarakhand</a></span>
         </div>
         <div id="slideContainer">
-            <img onclick="closeView()" id="closeBtn" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close Button">
-            <img id="sourceMapImage" src="./images/gujSlide.PNG" alt="Guj_Map">
+            <img draggable='false' onclick="closeView()" id="closeBtn" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close Button">
+            <img draggable='false' id="sourceMapImage" src="./images/gujSlide.PNG" alt="Guj_Map">
         </div>
-          <img class="festivalImage SlideImageIcons" src="./images/Festival CK.png" alt="Festival">
-            <img src="./images/Food CK.png" alt="food Image" class="foodImage SlideImageIcons">
-            <img class="danceImage SlideImageIcons" src="./images/Dance CK.png" alt="dance Image">
-            <img id="templeViewOn" onclick="accessTemple()" src="./images/Temple CK.png" class="templeImage SlideImageIcons" alt="templeImage">
+          <img draggable='false' id="festivalViewOn" class="festivalImage SlideImageIcons" src="./images/Festival CK.png" alt="Festival">
+            <img id="ViewFood" draggable='false' src="./images/Food CK.png" alt="food Image" class="foodImage SlideImageIcons">
+            <img id="viewArtAndDance" draggable='false' class="danceImage SlideImageIcons" src="./images/Dance CK.png" alt="dance Image">
+            <img draggable='false' id="templeViewOn" onclick="accessTemple()" src="./images/Temple CK.png" class="templeImage SlideImageIcons" alt="templeImage">
         <div hidden  id="outerSlideFunc" class="outerSlide">
         </div>
-    </div>
-    <div id="AccessTempleView" class="templeView">
+        <div id="AccessTempleView" class="templeView">
         
-        <div id="flexTempleID" class="FlextempleView">
-            <img id="TempleImage1" class="templeCard" src=""  alt="Temple Image 1">
-            <img id="TempleImage2" class="templeCard" src="" alt="Temple Image 2">
-            <img id="TempleImage3" class="templeCard" src="" alt="Temple Image 2">
-            <img  id="closeTempleView" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close button temple view">
+            <div id="flexTempleID" class="FlextempleView">
+                <img draggable='false' id="TempleImage1" class="templeCard" src=""  alt="Temple Image 1">
+                <img draggable='false' id="TempleImage2" class="templeCard" src="" alt="Temple Image 2">
+                <img draggable='false' id="TempleImage3" class="templeCard" src="" alt="Temple Image 2">
+                <img draggable='false' id="closeTempleView" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close button temple view">
+            </div>
+        </div>
+            
+    <div id="AccessFestivalView" class="FestivalView">
+        <div id="flexFestivalID" class="FlexFestivalView">
+            <img draggable='false' id="FestivalImage1" class="FestivalCard" src="" alt="Temple Image 1">
+            <img draggable='false' id="FestivalImage2" class="FestivalCard" src="" alt="Temple Image 2">
+            <img draggable='false' id="FestivalImage3" class="FestivalCard" src="" alt="Temple Image 2">
+            <img draggable='false' id="closeFestivalView" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close button temple view">
         </div>
     </div>
+    <div id="accessFoodItem" class="ViewFoodItem">
+        <div id="flexFoodItemID" class="FlexFoodView">
+            <img draggable='false' id="FoodImage1" class="FoodCard" src="" alt="Temple Image 1">
+            <img draggable='false' id="closeFoodView" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close button temple view">
+        </div>
+    </div>
+    <div id="accessArtItem" class="ViewArtItem">
+        <div id="flexFoodItemID" class="FlexArtView">
+            <img draggable='false' id="ArtImage1" class="FoodCard" src="" alt="Temple Image 1">
+            <img draggable='false' id="ArtImage2" class="FoodCard" src="" alt="Temple Image 1">            <img draggable='false' id="closeArtView" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close button temple view">
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./App.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
