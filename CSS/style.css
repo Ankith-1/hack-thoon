@@ -7,8 +7,13 @@ body{
     padding: 0;
     font-family: sans-serif;
     background:#000;
+    height: 100%;
+    width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
 
 /* navbar */
 
@@ -69,20 +74,12 @@ body{
 
 #section1{
     color: #fff;
-    height: 100vh;
-    width: 100vw;
     position: relative;
 }
 
 #main-vid{
-    position: absolute;
-    width: 135vh;
+    width: 100vw;
     opacity: 0.7;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 0
 }
 
 #main-text{
@@ -108,6 +105,8 @@ body{
     color: orange;
 }
 /* section 2 */
+
+
 .sec2-head{
     color: #fff;
     height: 5vh;
@@ -137,15 +136,122 @@ body{
     display: block;
     width: 100%;
   }
+  
+  .swiper .swiper-button-next{
+    color: orange;
+  }
+
+  .swiper .swiper-button-prev{
+    color: orange;
+  }
+
+  .swiper .swiper-pagination-bullet-active{
+    background: orange;
+  }
+
+  .swiper .swiper-pagination-bullet{
+    background: orange;
+  }
+/* section 3 */
+
+.section3{
+  background: url("/images/homepage\ background.png") no-repeat center center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.sec3txt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  flex-direction: column;
+  margin: auto;
+}
+
+.sec3txt1{
+  font-size: 76px;
+}
+
+.sec3txt2{
+  font-size: 40px;
+}
+
+.btn{
+  background: orange;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  margin-top: 10vh;
+}
+
+.btnlink{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.btn:hover{
+  background: red;
+  transition: 0.2s ease ;
+}
+
+.sec3img{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 36%;
+}
+
+.sec3img img{
+  height: 70vh;
+  margin: 0 5px;
+  border-radius: 5px;
+  opacity: 0.8;
+}
 
   /* footer */
 
   .foot{
-    height: 5vh;
+    color: #fff;
+    height: 10vh;
     width: 100vw;
-    border: 0px 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo{
     height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
+
+  #foot1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  @media only screen and (max-width:670px) and (min-width:560px){
+    #navbar{
+        font-size: 0.75em;
+    }
+}
+  @media only screen and (max-width:560px){
+
+    body{
+      font-size: 0.8em;
+    }
+
+    #navbar-p1{
+      display: none;
+    }
+    #navbar-p3{
+      display: none;
+    }
+}

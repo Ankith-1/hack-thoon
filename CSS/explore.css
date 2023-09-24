@@ -249,6 +249,13 @@ body{
     top: 65%;
     left: 10%;
 }
+
+
+@media only screen and (max-width:1000px){
+    #navbar{
+        width: 1000px;
+    }
+}
 .outerSlide{
     position: absolute;
     aspect-ratio: 1/1;

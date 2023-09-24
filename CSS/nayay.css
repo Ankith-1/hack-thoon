@@ -1,0 +1,16 @@
+#fb{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fb a{
+    background: #FDBA74;
+    padding-left: 10px;
+    margin-left: 25px;
+    height: 20px;
+    width: 120px;
+    text-decoration: none;
+    color: #fff;
+}
