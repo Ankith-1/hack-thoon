@@ -43,15 +43,15 @@
             <span><a id="himachalView" href="">Himachal Pradesh</a></span>
         </div>
         <span class="JammuKashmir reversedSpan">
-            <span><a href="">Jammu Kashmir</a></span>
+            <span><a id="JammuKashmirView" href="">Jammu Kashmir</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Ladakh reversedSpan">
-            <span><a href="">Ladakh</a></span>
+            <span><a id="LadakhView" href="">Ladakh</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="UttarPradesh reversedSpan">
-            <span><a href="">Uttar Pradesh</a></span>
+            <span><a id="UttarPradeshView" href="">Uttar Pradesh</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <span class="MadhyaPradesh reversedSpan">
@@ -59,7 +59,7 @@
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Bihar reversedSpan">
-            <span><a href="">Bihar</a></span>
+            <span><a id="BiharView" href="">Bihar</a></span>
             <span class="pin reversedPin"> </span>
         </span>
         <div class="pin TamilNadu">
@@ -78,7 +78,7 @@
             <span class="pin reversedPin"> </span>
         </span>
         <span class="Goa reversedSpan">
-            <span><a href="">Goa</a></span>
+            <span><a id="GoaView" href="">Goa</a></span>
             <span id="smallPulse" class="pin reversedPin"> </span>
         </span>
         <div class="pin AndhraPradesh">
@@ -88,64 +88,67 @@
             <span><a id="TelanganaView" href="">Telangana</a></span>
         </div>
         <span class="Chhattisgarh reversedSpan">
-            <span><a href="">Chhattisgarh</a></span>
+            <span><a id="ChhattisgarhView" href="">Chhattisgarh</a></span>
             <span id="" class="pin reversedPin"> </span>
         </span>
         <div class="pin Odisha">
-            <span><a href="">Odisha</a></span>
+            <span><a id="OdishaView" href="">Odisha</a></span>
         </div>
         <span class="Jharkhand reversedSpan">
             <span><a id="JharkhandView" href="">Jharkhand</a></span>
-            <span id="" class="pin reversedPin"> </span>
+            <span class="pin reversedPin"> </span>
         </span>
         <div class="pin WestBengal">
-            <span><a href="">West Bengal</a></span>
+            <span><a id="WestBengalView" href="">West Bengal</a></span>
         </div>
         <span class="Meghalaya reversedSpan">
-            <span><a href="">Meghalaya</a></span>
+            <span><a id="MeghalayaView" href="">Meghalaya</a></span>
             <span id="smallPulse" class="pin reversedPin"> </span>
         </span>
         <span class="Assam reversedSpan">
-            <span><a href="">Assam</a></span>
-            <span id="" class="pin reversedPin"> </span>
+            <span><a id="AssamView" href="">Assam</a></span>
+            <span class="pin reversedPin"> </span>
         </span>
-        <div id="Tripura" class="pin Sikkim">
-            <span><a href="">Sikkim</a></span>
+        <div  class="pin Sikkim">
+            <span><a id="SikkimView" href="">Sikkim</a></span>
         </div>
         <span class="Tripura reversedSpan">
-            <span><a href="">Tripura</a></span>
+            <span><a id="TripuraView" href="">Tripura</a></span>
             <span id="smallPulse" class="pin reversedPin"> </span>
         </span>
         <div id="smallPulse" class="pin Mizoram">
-            <span><a href="">Mizoram</a></span>
+            <span><a id="MizoramView" href="">Mizoram</a></span>
         </div>
-        <div class="pin Maipur">
-            <span><a href="">Maipur</a></span>
+        <div class="pin Manipur">
+            <span><a id="ManipurView" href="">Manipur</a></span>
         </div>
         <div class="pin Nagaland">
-            <span><a href="">Nagaland</a></span>
+            <span><a id="NagalandView" href="">Nagaland</a></span>
         </div>
-        <div id="ArunachalPradesh" class="pin ArunachalPradesh">
-            <span><a href="">ArunachalPradesh</a></span>
+        <div id="ArunachalPradesh class="pin ArunachalPradesh">
+            <span><a id="ArunachalPradeshView" href="">ArunachalPradesh</a></span>
         </div>
         <div id="Uttarakhand" class="pin Uttarakhand">
-            <span><a id="UttarakhandView" href="">Uttarakhand</a></span>
+            <span><a id="UttrakhanView" href="">Uttarakhand</a></span>
         </div>
         <div id="slideContainer">
-            <img onclick="closeView()" id="closeBtn" src="https://img.icons8.com/?size=512&id=11997&format=png" alt="close Button">
+            <img onclick="closeView()" id="closeBtn" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close Button">
             <img id="sourceMapImage" src="./images/gujSlide.PNG" alt="Guj_Map">
         </div>
           <img class="festivalImage SlideImageIcons" src="./images/Festival CK.png" alt="Festival">
             <img src="./images/Food CK.png" alt="food Image" class="foodImage SlideImageIcons">
             <img class="danceImage SlideImageIcons" src="./images/Dance CK.png" alt="dance Image">
-            <img id="templeViewOn" src="./images/Temple CK.png" class="templeImage SlideImageIcons" alt="templeImage">
+            <img id="templeViewOn" onclick="accessTemple()" src="./images/Temple CK.png" class="templeImage SlideImageIcons" alt="templeImage">
         <div hidden  id="outerSlideFunc" class="outerSlide">
         </div>
     </div>
-
-    <div class="templeView">
-        <div class="Temples">
-            <img hidden id="templeView" src="./images//akshardhamtemple.jpeg" alt="">
+    <div id="AccessTempleView" class="templeView">
+        
+        <div id="flexTempleID" class="FlextempleView">
+            <img id="TempleImage1" class="templeCard" src=""  alt="Temple Image 1">
+            <img id="TempleImage2" class="templeCard" src="" alt="Temple Image 2">
+            <img id="TempleImage3" class="templeCard" src="" alt="Temple Image 2">
+            <img  id="closeTempleView" src="https://img.icons8.com/?size=100&id=81432&format=png" alt="close button temple view">
         </div>
     </div>
     <script src="./App.js"></script>
