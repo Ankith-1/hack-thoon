@@ -19,7 +19,7 @@ a{
     position: absolute;
     width: 117px;
     height: 44px;
-    background: #7E47F3;
+    background: #FDBA74;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +63,11 @@ a{
     width: 131px;
     top: 29%;
     left: 69.5%;
+}
+
+.txt{
+    color: white;
+    text-align: center;
 }
 
 @media only screen and (max-width:900px) and (min-height : 700px){
