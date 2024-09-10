@@ -1,7 +1,7 @@
 .hero-img{
     margin-top: 2vh;
     margin-bottom: 2vh;
-    background: url("/images/undraw_home_cinema_l7yl.svg") no-repeat center center/contain;
+    background: url("../images/undraw_home_cinema_l7yl.svg") no-repeat center center/contain;
     height: 40vh;
 }
 

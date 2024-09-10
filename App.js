@@ -1,4 +1,30 @@
 // All states map view code JS
+const coords = { x: 0, y: 0 };
+const particles = []; // Array to hold particle elements
+
+window.addEventListener("mousemove", function (e) {
+  // Capture mouse coordinates, accounting for scroll
+  coords.x = e.clientX + window.scrollX;
+  coords.y = e.clientY + window.scrollY;
+
+  createParticle();
+});
+
+function createParticle() {
+  const particle = document.createElement('div');
+  particle.classList.add('trail');
+  document.body.appendChild(particle);
+
+  // Set the initial position of the particle
+  particle.style.left = coords.x + 'px';
+  particle.style.top = coords.y + 'px';
+
+  // Remove the particle after animation finishes
+  setTimeout(() => {
+    particle.remove();
+  }, 600); // The duration of the trail animation
+}
+
 var templeView;
 var timg1,timg2,timg3,timg4;
 var gujarat,karnataka,punjab,uttrakhand,kerala,odisha,tamilNadu,maharashtra,madhyaPradesh,westBengal,rajasthan,uttarPradesh,JammuKashmir,telannga;

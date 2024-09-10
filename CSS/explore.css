@@ -6,16 +6,19 @@
     box-sizing: border-box;
     
 }
+
 a{
     text-decoration: none;
 }
 
-body{
-    margin : 0;
-    padding: 0;
-    font-family: sans-serif;
-    background:#101224;
-}
+
+body {
+    /* Hide the default cursor */
+   margin: 0;
+    /* Prevent scrolling outside the page */
+   background-color: black; /* Set black background */
+ }
+ 
 
 
 .india-map{
@@ -262,7 +265,7 @@ body{
     width: 1000px;
     top: 0%;
     left: 0%;
-    background-color: #00000094;
+    background-color: #3a333394;
     z-index: 1;
 }
 #slideContainer{
